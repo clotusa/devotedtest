@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+}
+
+/* Devoted Studios Light Theme & Highlights */
+.devoted-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px 0 rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease-in-out;
+}
+
+.devoted-card:hover {
+  box-shadow: 0 10px 25px -5px rgba(114, 91, 255, 0.1), 0 8px 10px -6px rgba(114, 91, 255, 0.05);
+  border-color: #cbd5e1;
+}
+
+.devoted-gradient-text {
+  background: linear-gradient(135deg, #725bff 0%, #4f46e5 50%, #2563eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.devoted-btn-primary {
+  background: linear-gradient(135deg, #725bff 0%, #5b45ff 100%);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(114, 91, 255, 0.25);
+  transition: all 0.2s ease;
+}
+
+.devoted-btn-primary:hover {
+  background: linear-gradient(135deg, #6248ff 0%, #4c33ff 100%);
+  box-shadow: 0 6px 16px rgba(114, 91, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #725bff;
+}
